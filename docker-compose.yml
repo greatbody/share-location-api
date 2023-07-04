@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+          - ./server.py:/app/server.py:ro
+    ports:
+      - "8001:80"
