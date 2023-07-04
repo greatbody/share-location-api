@@ -1,6 +1,7 @@
 version: '3'
 services:
   web:
+    image: greatbody/share-location-api
     build: .
     volumes:
           - ./server.py:/app/server.py:ro
